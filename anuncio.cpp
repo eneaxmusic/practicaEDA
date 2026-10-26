@@ -8,7 +8,7 @@ g++ -std=c++11 Principal.cpp anuncio.cpp fecha.cpp -o P3_EDA
 
 
 
-Anuncio crearAnuncio(string ID, string tit, string descrip, string categ, Fecha publi, Fecha final)
+Anuncio crearAnuncio(string &ID, string &tit, string &descrip, string &categ, Fecha &publi, Fecha &final)
 {
     Anuncio e;
 
@@ -32,7 +32,7 @@ string suTitulo(const Anuncio &e)
     return e.titulo;
 }
 
-void cambiarTitulo(Anuncio &e, string n)
+void cambiarTitulo(Anuncio &e, string &n)
 {
     e.titulo = n;
 }
@@ -42,7 +42,7 @@ string suDescripcion(const Anuncio &e)
     return e.descripcion;
 }
 
-void cambiarDescripcion(Anuncio &e, string n)
+void cambiarDescripcion(Anuncio &e, string &n)
 {
     e.descripcion = n;
 }
@@ -52,7 +52,7 @@ string suCategoria(const Anuncio &e)
     return e.categoria;
 }
 
-void cambiarCategoria(Anuncio &e, string n)
+void cambiarCategoria(Anuncio &e, string &n)
 {
     e.categoria = n;
 }

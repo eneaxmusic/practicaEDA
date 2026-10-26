@@ -17,16 +17,19 @@ int main ()
     Fecha fpubl;
     Fecha ffin;
 
+    string id = "7888";
+    string articulo = "Coche";
+    string descripcion = "120000 km primer cliente";
+    string categoria = "MOTOR";
+
     crear(20, 2, 2001, fpubl, error);
     crear(20, 2, 2001, ffin, error);
 
-    Anuncio e = crearAnuncio("7888", "Coche", "120000 km primer cliente", "MOTOR", fpubl, ffin);
+    Anuncio e = crearAnuncio(id, articulo, descripcion, categoria, fpubl, ffin);    
 
-    
+    //for (int i = 0; i < )
 
-
-
-
+    cout << "";
 
     return 0;
 }
